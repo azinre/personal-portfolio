@@ -1,0 +1,35 @@
+.circularContainer {
+  position: relative;
+  margin: 0 auto;
+  animation: rotate 20s linear infinite;
+}
+
+.circleLetter {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.space {
+  margin: 0 0.2em;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add hover effect */
+.circularContainer:hover {
+  transform: scale(1.1) rotate(5deg) !important;
+}
+
+.circularContainer:hover .circleLetter {
+  color: #007bff;
+} 
