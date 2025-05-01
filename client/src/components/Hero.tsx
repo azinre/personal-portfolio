@@ -4,7 +4,7 @@ import styles from './CircularText.module.css';
 
 const Hero: React.FC = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-noir to-[#2A2A2A] text-ivory">
       <div className="text-center">
         <div className="mb-16">
           <CircularText 
@@ -14,16 +14,16 @@ const Hero: React.FC = () => {
           />
         </div>
         <h1 className="text-4xl md:text-6xl font-bold mt-8 mb-4">
-          Hi, I'm <span className="text-blue-400">Your Name</span>
+          Hi, I'm <span className="text-moss hover:text-sage transition-colors duration-300">Azin Rezaeian</span>
         </h1>
-        <p className="text-xl md:text-2xl text-gray-300 mb-8">
+        <p className="text-xl md:text-2xl text-sage mb-8">
           Full Stack Developer & UI/UX Designer
         </p>
         <div className="flex justify-center gap-4">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full transition-colors">
+          <button className="bg-sage hover:bg-moss text-noir hover:text-ivory px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
             View My Work
           </button>
-          <button className="border-2 border-white hover:bg-white hover:text-gray-900 px-6 py-3 rounded-full transition-colors">
+          <button className="border-2 border-sage hover:bg-sage text-sage hover:text-noir px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
             Contact Me
           </button>
         </div>
